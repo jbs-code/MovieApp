@@ -10,7 +10,7 @@ export const MovieTitleCard: FC<Props> = ({ movie }) => {
   const navigate = useNavigate();
 
   const onClick = () => {
-    navigate(`./details/${movie.id}`);
+    navigate(`/movies/details/${movie.id}`);
   };
 
   return (

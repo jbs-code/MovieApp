@@ -6,7 +6,7 @@ interface Props {
 }
 export const SearchMovieInput = ({ input, setInput }: Props) => {
   useEffect(() => {
-    localStorage.setItem("query", input);
+    sessionStorage.setItem("query", input);
   }, [input]);
   return (
     <div className="mb-4 flex gap-2 justify-center">

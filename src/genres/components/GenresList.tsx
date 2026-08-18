@@ -1,6 +1,6 @@
 import { GenreBadge, useGenres } from "..";
 
-import { type Dispatch, type SetStateAction } from "react";
+import { useEffect, type Dispatch, type SetStateAction } from "react";
 
 interface Props {
   genres: number[];
@@ -9,6 +9,10 @@ interface Props {
 
 export const GenresList = ({genres, setGenres}:Props) => {
   const { queryGenres } = useGenres();
+
+  useEffect(()=>{
+    sessionStorage.setItem("genres", JSON.stringify(genres));
+  },[genres]);
 
   const onAddGenre = (genreId: number) => {
     if (genres.includes(genreId)) {

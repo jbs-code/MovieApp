@@ -1,6 +1,7 @@
 export * from './actions/getMovieDetails';
 export * from './actions/getMovieImages';
 export * from './components/MovieDetails';
+export * from './components/MovieDetailsCard';
 export * from './components/MovieImages';
 export * from './components/ProductionCompanies';
 export * from './hooks/useMovieDetails';

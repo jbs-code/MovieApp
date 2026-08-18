@@ -6,9 +6,11 @@ import { useDebounce } from "./shared";
 import { useState } from "react";
 
 function MoviesApp() {
-  const [genres, setGenres] = useState<number[]>([]);
+  const [genres, setGenres] = useState<number[]>(
+    JSON.parse(sessionStorage.getItem("genres") || "[]"),
+  );
   const [inputSearch, setInputSearch] = useState<string>(
-    localStorage.getItem("query") || "",
+    sessionStorage.getItem("query") || "",
   );
   const debouncedQuery = useDebounce(inputSearch);
 
