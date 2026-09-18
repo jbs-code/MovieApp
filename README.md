@@ -1,10 +1,24 @@
-# React - Template
+# Movie Buff - React application with TypeScript
 
-## React + TypeScript + Vite
+## Description
+- You can find the movie you want and its details.
+- There are different options of genres to seek and watch how the view refresh while you select youre favorite.
 
-Proyecto de React con TypeScript listo para usar con integración de Tailwind CSS.
+## Technologies involved
+- React
+- TypeScript 
+- Tanstack Query
+- Axios
+- Tailwind CSS
+- Daisy UI
+- Motion
 
-`pnpm install` para instalar dependencias.
+## Start
+- Copy the ***.env.template*** file and rename to ***.env***.
+- Check the links in ***.env.template*** to get the keys.
+- You must get the environment variables and implement the file ***.env***.
 
-- React V19.2.6
-- Tailwind V4.3.0
+- The App was create with ```pnpm``` so you must run ```pnpm install``` to install dependencies.
+- Run ```pnpm dev``` to start application.
+
+![movie-buff](./public/movie-buff.png)
